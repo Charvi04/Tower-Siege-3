@@ -9,7 +9,7 @@ var score = 0;
 
 function preload()
 {
-  backgroundImg = loadImage("Images/Day.jpg");
+  backgroundImg = loadImage("Day.jpg");
 //getBackgroundImage();
 }
 
@@ -204,11 +204,11 @@ var hour = datetime.slice(11, 13);
 
 if(hour >= 06 && hour <= 19)
 {
-  backgroundImg = "Images/Day.jpg"
+  backgroundImg = "Day.jpg"
 }
 else
 {
-backgroundImg = "Images/Night.jpg"
+backgroundImg = "Night.jpg"
 }
 //backgroundImg = loadImage("Day.jpg");
 //backgroundImg = loadImage("Night.jpg");

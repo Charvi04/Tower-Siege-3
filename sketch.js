@@ -10,7 +10,7 @@ var score = 0;
 function preload()
 {
   backgroundImg = loadImage("Images/Day.jpg");
-getBackgroundImage();
+//getBackgroundImage();
 }
 
 function setup() {
@@ -168,7 +168,7 @@ function draw() {
   text("Press space to get one extra chance !!!!",670,450);
   fill("magenta");
   strokeWeight(4);
-  textFont("Georgia")
+  textFont("Times New Roman")
  text("Score : " + score, 1050, 40);
 
  
@@ -185,7 +185,8 @@ function mouseReleased(){
 }
 
 function keyPressed(){
-  if(keyCode === 32){
+  if(keyCode === 32 ){
+    Matter.Body.setPosition(hexagon.body, {x: 65 , y: 200});
       slingshot.attach(hexagon.body);
   }
   }
@@ -209,7 +210,7 @@ else
 {
 backgroundImg = "Images/Night.jpg"
 }
-backgroundImg = loadImage("Day.jpg");
+//backgroundImg = loadImage("Day.jpg");
 //backgroundImg = loadImage("Night.jpg");
 console.log(backgroundImg);
 }

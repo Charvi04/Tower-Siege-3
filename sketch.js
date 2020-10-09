@@ -152,7 +152,7 @@ function draw() {
   block24.score();
   block25.score();
   
-  
+ 
   
 //bomb.display();
 
